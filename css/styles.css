@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+html{
+    /*1 rem=10px*/
+    font-size: 62.5%;
+}
+
+
+/************************** Header *******************************/
+
+header{
+    border: 1px solid red;
+    padding: 15px;
+    background-color: #F0A83E;
+}
+
+.top-bar{
+    display: none;
+}
+
+.container{
+    display: flex;
+}
+
+.cont--row-justify-between-center{
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+.bottom-bar{
+    border: 1px solid green;
+    padding: 10px 15px;
+}
+
+.logo{
+    border: 1px solid blue;
+    gap:3px;
+}
+
+
+.logo h1{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.text-1{
+    color:#3C2313;
+}
+
+.text-2{
+    color:#FFFFFF;
+}
+
+.nav-bar{
+    display: none;
+}
+
+.burger-menu{
+    border: 1px solid green;
+}
+
+.fa-bars{
+    color:#FFFFFF;
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+
+/************************** Main *******************************/
+
+.banner{
+    border: 1px solid green;
+    height: 50vh;
+    background-image: url("../img/bowl-and-pet-daities-on-green-background\ 1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position:left top;
+}
+
+.cont--column-center{
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+} 
+
+
+.banner div p{
+    border: cornflowerblue 1px solid;
+    margin-bottom: 10px;
+}
+
+.banner_titulo{
+    background-color: #FFFFFF;
+    font-size: 2.5rem;
+    font-weight: 400;
+    border-radius: 3px;
+    padding: 10px 20px;
+}
+
+.banner__description{
+    align-self: flex-end;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color:#3C2313;
+}
+
+.banner_btn--uppercase{
+    align-self: flex-end;
+    font-weight: 400;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color:#FFFFFF;
+    background-color: #F0A83E;
+    border-radius: 5px;
+    padding: 10px;
+}
+/************************** Section productos destacados *******************************/
+.productos{
+    border: 1px solid #3C2313;
+    margin: 5px;
+}
+
+.productos-destacados{
+    border: 1px solid blue;
+    padding: 10px;
+}
+
+.productos-destacados img{
+    margin-bottom: 15px;
+}
+
+.producto_titulo{
+    color:#3C2313;
+    font-weight: 700;
+    font-size: 4rem;
+    border: #3C2313 1px solid;
+    text-align: center;
+}
+
+.cont--row-justify-center{
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.productos-destacados ul{
+    gap:12px;
+    padding-top: 10px;
+}
+
+/************************** Section articulos *******************************/
+.articulos{
+    border: #3C2313 1px solid;
+    margin: 10px 0;
+}
+
+.articulos article{
+    border: #000 1px solid;
+    padding: 10px
+}
+
+.articulos article img{
+    height: 40vh;
+}
+
+.info-articulo{
+    width: 100%;
+    border: #3C2313 1px solid;
+}
+
+.descripcion{
+    font-size: 1.3rem;
+    color:#3C2313;
+    font-weight: 500;
+}
+
+.precio{
+    font-size: 1.3rem;
+    color:#F0A83E;
+    font-weight: 500;
+}
+
+/************************** Section contacto *******************************/
+.contactanos{
+    border: 1px solid green;
+    padding: 10px;
+}
+
+
+.form-control{
+    border:red 1px solid;
+    width: 100%;
+}
+
+.contactanos h2{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 4rem;
+    color:#3C2313;
+}
+
+.form-group{
+    border: #3C2313 1px solid;
+    width: 90%;
+    margin-bottom: 5px ;
+    justify-content: center;
+    align-items: center;
+}
+
+.form__input--bg_brown{
+    background-color: #3C2313;
+    border-radius: 15px;
+    height: 40px;
+    width: 80%;
+    border: #3C2313;
+}
+
+::placeholder{
+    color:#AB9C9C;
+    font-size: 1.1rem;
+    padding-left: 10px;
+}
+
+.container-btn{
+    margin-top:35px;
+    justify-content: space-between;
+    border: #000 1px solid;
+    width: 100%;
+}
+
+.container-btn button{
+    width: 49%;
+    border-radius: 20px;
+    height: 40px;
+}
+
+.btn--reset{
+    background-color: #8A8787;
+    border: #8A8787;  
+}
+
+.btn--submit{
+    background-color: #F0A83E;
+    border: #F0A83E;  
+}
+
+.btn-form button{
+    color: #FFFFFF;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+/************************** Section suscripcion*******************************/
+.suscripcion{
+    border: 1px solid blue;
+    background-color: #F0A83E;
+}
+
+.novedades{
+    gap:12px;
+}
+
+
+
+.novedades h3{
+    color:#FFFFFF;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 10px 0;
+}
+
+.form-suscripcion{
+    width: 100%;
+    border: red 1px solid;
+    padding: 8px 20px;
+}
+
+.form-suscripcion input{
+    background-color: #FFFFFF;
+    width: 62%;
+    border: #FFFFFF;
+}
+
+.form-suscripcion button{
+    width: 35%;
+    color:#FFFFFF;
+    font-size: 1.5rem;
+    font-weight: bold;
+    height: 35px;
+    padding: 5px;
+}
+
+
+/************************** Footer *******************************/
+footer{
+    border: 1px blue solid;
+    background-color: #3C2313;
+}
+
+.contacto{
+    border: 1px solid white;
+}
+
+.contacto div{
+    border: #F0A83E 1px solid;
+    margin: 20px 0;
+}
+
+.contacto h3{
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.contacto p{
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #8A8787;
+}
+
+.text-3{
+    color:#F0A83E
+}
+
+footer .logo{
+    font-size: 1rem;
+}
+
+.logo-footer{
+    order: -1;
+    margin: 15px 0 0;
+}
+
+.bottom-footer{
+    background-color: #222222;
+    color:#FFFFFF
+}
+
+.bottom-footer p{
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.contacto article{
+    gap:15px;
+    border: #F0A83E 1px solid;
+}
+
+
+
+
+
+
+
